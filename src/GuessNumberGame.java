@@ -11,7 +11,7 @@ public class GuessNumberGame {
         int generateNumber = new Random().nextInt(1, 100);
         int nbTentatives = 5;
         int inputUser = 0;
-        System.out.println(generateNumber);
+        System.out.println("generateNumber: " + generateNumber);
 
         System.out.println("Un nombre compris entre 1 et 100 a été généré par l'ordinateur" +
                 "\n Essayez de le deviner, vous avez 5 chances!");
@@ -44,7 +44,6 @@ public class GuessNumberGame {
     private static void repeatTheGame() {
         System.out.println("Voulez-vous jouer à nouveau ?(Y/n)");
         String reponse = scanner.next();
-        System.out.println("reponse" + reponse);
 
         if (reponse.toLowerCase().trim().equalsIgnoreCase("yes")
                 || reponse.toLowerCase().trim().equalsIgnoreCase("oui")
